@@ -1,0 +1,63 @@
+FIFO Principle of Queue:
+-> A Queue is like a line waiting to purchase tickets, where the first person in line is the first person served. (i.e. First come first serve).
+-> Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue(sometimes, head of the queue), similarly, the position of the last entry in the queue, that is, the one most recently added, is called the rear (or the tail) of the queue. See the below figure.
+
+Characteristics of Queue:
+-> Queue can handle multiple data.
+-> We can access both ends.
+-> They are fast and flexible. 
+
+Queue Representation:
+✔ Array Representation:-
+Like stacks, Queues can also be represented in an array: In this representation, the Queue is implemented using the array. Variables used in this case are
+🎱 Queue: the name of the array storing queue elements.
+🎱 Front: the index where the first element is stored in the array representing the queue.
+🎱 Rear: the index where the last element is stored in an array representing the queue.
+
+✔ Linked List Representation:-
+A queue can also be represented in Linked-lists, Pointers, and Structures.
+
+Types of Queue:
+There are different types of queue:-
+✔ Input Restricted Queue- This is a simple queue. In this type of queue, the input can be taken from only one end but deletion can be done from any of the ends.
+
+✔ Output Restricted Queue- This is also a simple queue. In this type of queue, the input can be taken from both ends but deletion can be done from only one end.
+
+✔ Circular Queue- This is a special type of queue where the last position is connected back to the first position. Here also the operations are performed in FIFO order. To know more refer this.
+
+✔ Double-Ended Queue (Dequeue)- In a double-ended queue the insertion and deletion operations, both can be performed from both ends. To know more refer this.
+
+✔ Priority Queue- A priority queue is a special queue where the elements are accessed based on the priority assigned to them.
+
+Basic Operations of Queue:
+There are few supporting operations (auxiliary operations):-
+🎱 front(): This operation returns the element at the front end without removing it.
+🎱 rear(): This operation returns the element at the rear end without removing it.
+🎱 isEmpty(): This operation returns a boolean value that indicates whether the queue is empty or not.
+🎱 isFull(): This operation returns a boolean value that indicates whether the queue is full or not.
+🎱 Enqueue(): Adds (or stores) an element to the end of the queue.
+🎱 Dequeue(): Removes (or access) the first element from the queue.
+
+Time complexity: All the operations have O(1) time complexity. "int size()", this operation will return the size of the queue i.e., the total number of elements present in the queue and it’s time complexity is O(n). 
+Auxiliary Space: O(N) 
+
+Applications of Queue:
+Application of queue is common. In a computer system, there may be queues of tasks waiting for the printer, for access to disk storage, or even in a time-sharing system, for use of the CPU. Within a single program, there may be multiple requests to be kept in a queue, or one task may create other tasks, which must be done in turn by keeping them in a queue.
+🎱 It has a single resource and multiple consumers.
+🎱 It synchronizes between slow and fast devices.
+🎱 In a network, a queue is used in devices such as a router/switch and mail queue.
+🎱 Variations: dequeue, priority queue and double-ended priority queue.
+
+Advantages of Queue:
+🎱 A large amount of data can be managed efficiently with ease.
+🎱 Operations such as insertion and deletion can be performed with ease as it follows the first in first out rule.
+🎱 Queues are useful when a particular service is used by multiple consumers.
+🎱 Queues are fast in speed for data inter-process communication.
+🎱 Queues can be used in the implementation of other data structures.
+
+Disadvantages of Queue:
+🎱 The operations such as insertion and deletion of elements from the middle are time consuming.
+🎱 Limited Space.
+🎱 In a classical queue, a new element can only be inserted when the existing elements are deleted from the queue.
+🎱 Searching an element takes O(N) time.
+🎱 Maximum size of a queue must be defined prior.
